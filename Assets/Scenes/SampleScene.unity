@@ -250,11 +250,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2865854344528938617, guid: e1a0e3793d5bc984f8cac04bf1ce8730, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.002
+      value: -0.005
       objectReference: {fileID: 0}
     - target: {fileID: 2865854344528938617, guid: e1a0e3793d5bc984f8cac04bf1ce8730, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.021
+      value: 0.016
       objectReference: {fileID: 0}
     - target: {fileID: 2865854344528938617, guid: e1a0e3793d5bc984f8cac04bf1ce8730, type: 3}
       propertyPath: m_LocalPosition.z
@@ -288,6 +288,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2905145984412921228, guid: e1a0e3793d5bc984f8cac04bf1ce8730, type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2905145984412921228, guid: e1a0e3793d5bc984f8cac04bf1ce8730, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -5492857000867884936, guid: 5006328113966774099e35eae089236d, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3851,5 +3859,5 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 519420032}
-  - {fileID: 1979277920}
   - {fileID: 823828162}
+  - {fileID: 1979277920}

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2905145984412921228}
   - component: {fileID: 7044087969387987751}
   - component: {fileID: 6096697383896251687}
+  - component: {fileID: 4236313842286131266}
   m_Layer: 0
   m_Name: KnightHero
   m_TagString: Player
@@ -28,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 9564582547195872}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.1321619, y: -0.67845154, z: 0}
+  m_LocalPosition: {x: -1.1321619, y: -0.6784515, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -126,3 +127,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 6
+--- !u!111 &4236313842286131266
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9564582547195872}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 798302831737930180, guid: 5006328113966774099e35eae089236d, type: 3}
+  m_Animations:
+  - {fileID: 7400000, guid: 7692a7d46c91f8344bf051f4d41c519b, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
