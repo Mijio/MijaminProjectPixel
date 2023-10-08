@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class MovementPlayer : MonoBehaviour
 {
-    public float speed;
-    private Vector2 direction;
+    public float Speed = 6;
     private Rigidbody2D rb;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -14,14 +14,11 @@ public class MovementPlayer : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        direction.x = Input.GetAxisRaw("Horizontal");
-        direction.y = Input.GetAxisRaw("Vertical");
-    }
-
     void FixedUpdate()
     {
-        rb.MovePosition(rb.position + direction * speed * Time.fixedDeltaTime);
+        float x = Input.GetAxisRaw("Horizontal");
+        float y = Input.GetAxisRaw("Vertical");
+
+        rb.velocity = new Vector2(Speed * x, Speed * y);
     }
 }
