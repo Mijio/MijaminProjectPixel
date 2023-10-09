@@ -9,7 +9,7 @@ public class EnemyController : MonoBehaviour
     public Transform player;
 
     public float speed;
-    public float adroDistanse;
+    public float agroRange;
     
     void Start()
     {
@@ -21,7 +21,7 @@ public class EnemyController : MonoBehaviour
     {
         float distToPlayer = Vector2.Distance(transform.position, player.position);
 
-        if (distToPlayer < adroDistanse)
+        if (distToPlayer < agroRange)
         {
             StartHunting();
         }
@@ -40,7 +40,7 @@ public class EnemyController : MonoBehaviour
         }
         else if (player.position.x > transform.position.x)
         {
-            physic.velocity = new Vector2(-speed, 0);
+            physic.velocity = new Vector2( speed, 0);
             transform.localScale = new Vector2(-1, 1);
         }
     }
