@@ -168,7 +168,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1487527752}
-  speed: 0.3
+  speed: 0.4
   agroRange: 1
 --- !u!1001 &442480286
 PrefabInstance:

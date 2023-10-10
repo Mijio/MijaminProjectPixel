@@ -8,6 +8,8 @@ public class EnemyManager : MonoBehaviour
 
     public Transform player;
 
+    public Animator goblin_animator;
+
     public float speed;
     public float agroRange;
 
@@ -17,40 +19,40 @@ public class EnemyManager : MonoBehaviour
     {
         float distToPlayer = Vector2.Distance(transform.position, player.position);
 
-        if (distToPlayer < agroRange - 0.2)
+        if ((distToPlayer < agroRange) && (distToPlayer > 0.1))
         {
+            goblin_animator.SetFloat("HorizontalMove", 1);
             StartHunting();
         }
         else
         {
+            goblin_animator.SetFloat("HorizontalMove", 0);
             StopHunting();
         }
-    }
 
-   // private int dx = player.position.x - transform.position.x;
-   //private int dy = player.position.y - transform.position.y;
+    }
 
     void StartHunting()
     {
         if ((player.position.x < transform.position.x) && (player.position.y < transform.position.y))
         {
             physic.velocity = new Vector2(-speed, -speed);
-            transform.localScale = new Vector2(1, 1);
+            transform.localScale = new Vector2(-1, 1);
         }
         else if ((player.position.x < transform.position.x) && (player.position.y > transform.position.y))
         {
             physic.velocity = new Vector2(-speed, speed);
-            transform.localScale = new Vector2(1, 1);
+            transform.localScale = new Vector2(-1, 1);
         }
         else if ((player.position.x > transform.position.x) && (player.position.y < transform.position.y))
         {
             physic.velocity = new Vector2(speed, -speed);
-            transform.localScale = new Vector2(-1, 1);
+            transform.localScale = new Vector2(1, 1);
         }
         else if ((player.position.x > transform.position.x) && (player.position.y > transform.position.y))
         {
             physic.velocity = new Vector2(speed, speed);
-            transform.localScale = new Vector2(-1, 1);
+            transform.localScale = new Vector2(1, 1);
         }
     }
 
