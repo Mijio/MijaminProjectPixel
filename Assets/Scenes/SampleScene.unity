@@ -128,21 +128,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2519646439404284627, guid: bf897c59a199fbb4fa3a3e4455e8920e, type: 3}
   m_PrefabInstance: {fileID: 1707494252}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &324615208
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 324615207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59b715235db6335458c141417b02d140, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 1487527752}
-  speed: 0.5
-  agroRange: 1
 --- !u!50 &324615209
 Rigidbody2D:
   serializedVersion: 4
@@ -170,6 +155,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &324615210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 324615207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd36a69a24109df489ba0c01a3448158, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1487527752}
+  speed: 0.3
+  agroRange: 1
 --- !u!1001 &442480286
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -427,7 +427,7 @@ PrefabInstance:
       addedObject: {fileID: 324615209}
     - targetCorrespondingSourceObject: {fileID: 2519646439404284627, guid: bf897c59a199fbb4fa3a3e4455e8920e, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 324615208}
+      addedObject: {fileID: 324615210}
   m_SourcePrefab: {fileID: 100100000, guid: bf897c59a199fbb4fa3a3e4455e8920e, type: 3}
 --- !u!1 &1841799376
 GameObject:
